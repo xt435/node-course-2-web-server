@@ -58,6 +58,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project Page'
+  });
+});
+
 // /bad -send back json with errorMessage
 var jObj = {
   name: 'Xuanchang',
